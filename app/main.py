@@ -92,6 +92,6 @@ def recommend_movies_():
 		return str("Movie not in database!")
 	for i in res:
 		l.append(i['Name'])
-	return jsonify(str(l))
+	return str("\t".join(l))
 
 
